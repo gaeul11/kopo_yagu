@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1430</width>
+    <width>1124</width>
     <height>1074</height>
    </rect>
   </property>
@@ -23,9 +23,9 @@
    <widget class="QTabWidget" name="kbo_tabWidget">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>20</y>
-      <width>1271</width>
+      <x>0</x>
+      <y>10</y>
+      <width>1361</width>
       <height>1091</height>
      </rect>
     </property>
@@ -58,7 +58,7 @@ QTabBar::tab:hover {
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="home_tab">
      <attribute name="title">
@@ -69,7 +69,7 @@ QTabBar::tab:hover {
        <rect>
         <x>800</x>
         <y>30</y>
-        <width>461</width>
+        <width>491</width>
         <height>441</height>
        </rect>
       </property>
@@ -81,8 +81,8 @@ QTabBar::tab:hover {
         <rect>
          <x>10</x>
          <y>10</y>
-         <width>471</width>
-         <height>431</height>
+         <width>481</width>
+         <height>421</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -98,7 +98,7 @@ font: 11pt &quot;D2Coding&quot;;</string>
         <rect>
          <x>10</x>
          <y>10</y>
-         <width>461</width>
+         <width>481</width>
          <height>41</height>
         </rect>
        </property>
@@ -124,12 +124,12 @@ padding:4px</string>
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
-      <widget class="QLineEdit" name="new_list_item_01">
+      <widget class="QLineEdit" name="new_list_item_1">
        <property name="geometry">
         <rect>
          <x>10</x>
          <y>70</y>
-         <width>451</width>
+         <width>481</width>
          <height>41</height>
         </rect>
        </property>
@@ -143,7 +143,7 @@ font: 11pt &quot;D2Coding&quot;;</string>
         <rect>
          <x>10</x>
          <y>110</y>
-         <width>451</width>
+         <width>481</width>
          <height>41</height>
         </rect>
        </property>
@@ -157,7 +157,7 @@ font: 11pt &quot;D2Coding&quot;;</string>
         <rect>
          <x>10</x>
          <y>150</y>
-         <width>451</width>
+         <width>481</width>
          <height>41</height>
         </rect>
        </property>
@@ -171,7 +171,7 @@ font: 11pt &quot;D2Coding&quot;;</string>
         <rect>
          <x>10</x>
          <y>190</y>
-         <width>451</width>
+         <width>481</width>
          <height>41</height>
         </rect>
        </property>
@@ -185,7 +185,7 @@ font: 11pt &quot;D2Coding&quot;;</string>
         <rect>
          <x>10</x>
          <y>230</y>
-         <width>451</width>
+         <width>481</width>
          <height>41</height>
         </rect>
        </property>
@@ -199,7 +199,7 @@ font: 11pt &quot;D2Coding&quot;;</string>
         <rect>
          <x>10</x>
          <y>270</y>
-         <width>451</width>
+         <width>481</width>
          <height>41</height>
         </rect>
        </property>
@@ -213,7 +213,7 @@ font: 11pt &quot;D2Coding&quot;;</string>
         <rect>
          <x>10</x>
          <y>310</y>
-         <width>451</width>
+         <width>481</width>
          <height>41</height>
         </rect>
        </property>
@@ -227,7 +227,7 @@ font: 11pt &quot;D2Coding&quot;;</string>
         <rect>
          <x>10</x>
          <y>350</y>
-         <width>451</width>
+         <width>481</width>
          <height>41</height>
         </rect>
        </property>
@@ -236,6 +236,27 @@ font: 11pt &quot;D2Coding&quot;;</string>
 font: 11pt &quot;D2Coding&quot;;</string>
        </property>
       </widget>
+      <widget class="QTableWidget" name="tableWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>481</width>
+         <height>391</height>
+        </rect>
+       </property>
+      </widget>
+      <zorder>tableWidget_2</zorder>
+      <zorder>label_3</zorder>
+      <zorder>label_5</zorder>
+      <zorder>new_list_item_1</zorder>
+      <zorder>new_list_item_2</zorder>
+      <zorder>new_list_item_3</zorder>
+      <zorder>new_list_item_4</zorder>
+      <zorder>new_list_item_5</zorder>
+      <zorder>new_list_item_6</zorder>
+      <zorder>new_list_item_7</zorder>
+      <zorder>new_list_item_8</zorder>
      </widget>
      <widget class="QWidget" name="rank_widget" native="true">
       <property name="geometry">
@@ -505,7 +526,7 @@ padding:4px</string>
         <x>0</x>
         <y>0</y>
         <width>1101</width>
-        <height>541</height>
+        <height>681</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -524,7 +545,7 @@ padding:4px</string>
           <x>0</x>
           <y>0</y>
           <width>1091</width>
-          <height>491</height>
+          <height>631</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -537,48 +558,206 @@ padding:4px</string>
          <string>TextLabel</string>
         </property>
        </widget>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>0</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>세이브</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>평균자책</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_1">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>0</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>승</string>
+        </property>
+       </widget>
+       <widget class="QScrollArea" name="scrollArea">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>991</width>
+          <height>601</height>
+         </rect>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>989</width>
+           <height>599</height>
+          </rect>
+         </property>
+         <widget class="QTableWidget" name="tableWidget_week_2">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>971</width>
+            <height>571</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="tableWidget_week_3">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>971</width>
+            <height>601</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+       </widget>
       </widget>
       <widget class="QWidget" name="taja_rank">
        <attribute name="title">
         <string>타자 순위</string>
        </attribute>
-       <widget class="QTableWidget" name="table_taja">
+       <widget class="QPushButton" name="pushButton_3">
         <property name="geometry">
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>1101</width>
-          <height>491</height>
+          <width>81</width>
+          <height>31</height>
          </rect>
         </property>
-        <property name="font">
-         <font>
-          <family>D2Coding</family>
-          <pointsize>20</pointsize>
-         </font>
+        <property name="text">
+         <string>타율</string>
         </property>
-        <property name="rowCount">
-         <number>1</number>
+       </widget>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>0</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
         </property>
-        <property name="columnCount">
-         <number>7</number>
+        <property name="text">
+         <string>홈런</string>
         </property>
-        <row/>
-        <column>
-         <property name="text">
-          <string>순위</string>
+       </widget>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>0</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>도루</string>
+        </property>
+       </widget>
+       <widget class="QScrollArea" name="scrollArea_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>1101</width>
+          <height>601</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #FFFFFFF;</string>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOn</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAsNeeded</enum>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="player_Scroll_2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>1082</width>
+           <height>599</height>
+          </rect>
          </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>선수</string>
+         <property name="styleSheet">
+          <string notr="true">background-color: #FFFFFF;</string>
          </property>
-        </column>
-        <column/>
-        <column/>
-        <column/>
-        <column/>
-        <column/>
+         <widget class="QTableWidget" name="tableWidget_week_4">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>1091</width>
+            <height>611</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="tableWidget_week_5">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>1091</width>
+            <height>611</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+         </widget>
+        </widget>
        </widget>
       </widget>
      </widget>
@@ -2920,7 +3099,7 @@ padding:2px;
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1430</width>
+     <width>1124</width>
      <height>21</height>
     </rect>
    </property>
