@@ -1,0 +1,2953 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1430</width>
+    <height>1074</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-coloer:#E2E2E2;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-coloer:#E2E2E2;</string>
+   </property>
+   <widget class="QTabWidget" name="kbo_tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>1361</width>
+      <height>1091</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabWidget {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #E2E2E2;  /* 탭 위젯 배경색 */
+}
+
+QTabBar::tab {
+	
+    background-color: #9F9BBC;  /* 일반 탭의 배경색 */
+    color: #E2E2E2;  /* 탭 텍스트 색상 */
+    padding: 10px;  /* 탭의 패딩 */
+	
+}
+
+QTabBar::tab:selected {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #8C8EB8;  /* 선택된 탭의 배경색 */
+    color: #F68EAB;  /* 선택된 탭의 텍스트 색상 */
+	font: bold &quot;D2Coding&quot;;
+}
+
+QTabBar::tab:hover {
+    background-color: #9F9BBC;  /* 마우스 오버 시 탭 배경색 */
+}</string>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Rounded</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="home_tab">
+     <attribute name="title">
+      <string>메인</string>
+     </attribute>
+     <widget class="QWidget" name="new_widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>30</y>
+        <width>491</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;D2Coding&quot;;</string>
+      </property>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>481</width>
+         <height>421</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:#FEFEFE;
+font: 11pt &quot;D2Coding&quot;;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>481</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>D2Coding</family>
+         <pointsize>13</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color : #F68EAB;
+font: 75 13pt &quot;D2Coding&quot;;
+color : #ffffff;
+padding:4px</string>
+       </property>
+       <property name="text">
+        <string>이 시각 많이 본 뉴스</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="new_list_item_1">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>481</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:#FEFEFE;
+font: 11pt &quot;D2Coding&quot;;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="new_list_item_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>110</y>
+         <width>481</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:#FEFEFE;
+font: 11pt &quot;D2Coding&quot;;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="new_list_item_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>150</y>
+         <width>481</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:#FEFEFE;
+font: 11pt &quot;D2Coding&quot;;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="new_list_item_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>190</y>
+         <width>481</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:#FEFEFE;
+font: 11pt &quot;D2Coding&quot;;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="new_list_item_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>230</y>
+         <width>481</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:#FEFEFE;
+font: 11pt &quot;D2Coding&quot;;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="new_list_item_6">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>270</y>
+         <width>481</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:#FEFEFE;
+font: 11pt &quot;D2Coding&quot;;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="new_list_item_7">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>310</y>
+         <width>481</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:#FEFEFE;
+font: 11pt &quot;D2Coding&quot;;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="new_list_item_8">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>350</y>
+         <width>481</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:#FEFEFE;
+font: 11pt &quot;D2Coding&quot;;</string>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>481</width>
+         <height>391</height>
+        </rect>
+       </property>
+      </widget>
+      <zorder>tableWidget_2</zorder>
+      <zorder>label_3</zorder>
+      <zorder>label_5</zorder>
+      <zorder>new_list_item_1</zorder>
+      <zorder>new_list_item_2</zorder>
+      <zorder>new_list_item_3</zorder>
+      <zorder>new_list_item_4</zorder>
+      <zorder>new_list_item_5</zorder>
+      <zorder>new_list_item_6</zorder>
+      <zorder>new_list_item_7</zorder>
+      <zorder>new_list_item_8</zorder>
+     </widget>
+     <widget class="QWidget" name="rank_widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>761</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>651</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>D2Coding</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(244, 244, 244);
+padding:10px;
+</string>
+       </property>
+       <property name="text">
+        <string>팀 순위</string>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>761</width>
+         <height>431</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>D2Coding</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(244, 244, 244);
+padding:10px;
+border: 2px solid #e2e2e2;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>741</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLineEdit" name="lineEdit">
+          <property name="styleSheet">
+           <string notr="true">background-color : #F68EAB;
+font: 11pt &quot;D2Coding&quot;;
+color : #ffffff;
+padding:4px</string>
+          </property>
+          <property name="text">
+           <string>순위</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_2">
+          <property name="styleSheet">
+           <string notr="true">background-color : #F68EAB;
+font: 11pt &quot;D2Coding&quot;;
+color : #ffffff;
+padding:4px</string>
+          </property>
+          <property name="text">
+           <string>팀</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_3">
+          <property name="styleSheet">
+           <string notr="true">background-color : #F68EAB;
+font: 11pt &quot;D2Coding&quot;;
+color : #ffffff;
+padding:4px</string>
+          </property>
+          <property name="text">
+           <string>게임수</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_4">
+          <property name="styleSheet">
+           <string notr="true">background-color : #F68EAB;
+font: 11pt &quot;D2Coding&quot;;
+color : #ffffff;
+padding:4px</string>
+          </property>
+          <property name="text">
+           <string>승</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_7">
+          <property name="styleSheet">
+           <string notr="true">background-color : #F68EAB;
+font: 11pt &quot;D2Coding&quot;;
+color : #ffffff;
+padding:4px</string>
+          </property>
+          <property name="text">
+           <string>승차</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_6">
+          <property name="styleSheet">
+           <string notr="true">background-color : #F68EAB;
+font: 11pt &quot;D2Coding&quot;;
+color : #ffffff;
+padding:4px</string>
+          </property>
+          <property name="text">
+           <string>패</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_5">
+          <property name="styleSheet">
+           <string notr="true">background-color : #F68EAB;
+font: 11pt &quot;D2Coding&quot;;
+color : #ffffff;
+padding:4px</string>
+          </property>
+          <property name="text">
+           <string>무</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_9">
+          <property name="styleSheet">
+           <string notr="true">background-color : #F68EAB;
+font: 11pt &quot;D2Coding&quot;;
+color : #ffffff;
+padding:4px</string>
+          </property>
+          <property name="text">
+           <string>승률</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_10">
+          <property name="styleSheet">
+           <string notr="true">background-color : #F68EAB;
+font: 11pt &quot;D2Coding&quot;;
+color : #ffffff;
+padding:4px</string>
+          </property>
+          <property name="text">
+           <string>득점</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_11">
+          <property name="styleSheet">
+           <string notr="true">background-color : #F68EAB;
+font: 11pt &quot;D2Coding&quot;;
+color : #ffffff;
+padding:4px</string>
+          </property>
+          <property name="text">
+           <string>실점</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>741</width>
+         <height>331</height>
+        </rect>
+       </property>
+      </widget>
+      <zorder>label_4</zorder>
+      <zorder>label_2</zorder>
+      <zorder>horizontalLayoutWidget</zorder>
+      <zorder>tableWidget</zorder>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="rank_tab">
+     <attribute name="title">
+      <string>선수순위</string>
+     </attribute>
+     <widget class="QTabWidget" name="rankList_tab">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1101</width>
+        <height>541</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tusu_rank">
+       <attribute name="title">
+        <string>투수 순위</string>
+       </attribute>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1091</width>
+          <height>491</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+
+    background-color: #FFF5EC;  /* 탭 위젯 배경색 */
+}</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="taja_rank">
+       <attribute name="title">
+        <string>타자 순위</string>
+       </attribute>
+       <widget class="QTableWidget" name="table_taja">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1101</width>
+          <height>491</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>D2Coding</family>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="rowCount">
+         <number>1</number>
+        </property>
+        <property name="columnCount">
+         <number>7</number>
+        </property>
+        <row/>
+        <column>
+         <property name="text">
+          <string>순위</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>선수</string>
+         </property>
+        </column>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="info_tab">
+     <attribute name="title">
+      <string>선수정보</string>
+     </attribute>
+     <widget class="QTableWidget" name="player_Info">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1101</width>
+        <height>551</height>
+       </rect>
+      </property>
+      <property name="rowCount">
+       <number>1</number>
+      </property>
+      <property name="columnCount">
+       <number>10</number>
+      </property>
+      <row/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="schedule_tab">
+     <attribute name="title">
+      <string>일정</string>
+     </attribute>
+     <widget class="QLabel" name="w_1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>140</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>12</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::WheelFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #E2E2E2 ;  /* Gray background color */
+	color : #575567;
+	border: 1px solid #9F9BBC;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>월</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_back">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>981</width>
+        <height>901</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="w_2">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>90</y>
+        <width>140</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #E2E2E2 ;  /* Gray background color */
+	color : #575567;
+	border: 1px solid #9F9BBC;  /* Black border color */
+}</string>
+      </property>
+      <property name="text">
+       <string>화</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByMouse</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="w_3">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>90</y>
+        <width>140</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #E2E2E2 ;  /* Gray background color */
+	color : #575567;
+	border: 1px solid #9F9BBC;  /* Black border color */
+}</string>
+      </property>
+      <property name="text">
+       <string>수</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="w_4">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>90</y>
+        <width>140</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #E2E2E2 ;  /* Gray background color */
+	color : #575567;
+	border: 1px solid #9F9BBC;  /* Black border color */
+}</string>
+      </property>
+      <property name="text">
+       <string>목</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="w_5">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>90</y>
+        <width>140</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #E2E2E2 ;  /* Gray background color */
+	color : #575567;
+	border: 1px solid #9F9BBC;  /* Black border color */
+}</string>
+      </property>
+      <property name="text">
+       <string>금</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="w_6">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>90</y>
+        <width>140</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #E2E2E2 ;  /* Gray background color */
+	color : #575567;
+	border: 1px solid #9F9BBC;  /* Black border color */
+}</string>
+      </property>
+      <property name="text">
+       <string>토</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="w_7">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>90</y>
+        <width>140</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #E2E2E2 ;  /* Gray background color */
+	color : #575567;
+	border: 1px solid #9F9BBC;  /* Black border color */
+}</string>
+      </property>
+      <property name="text">
+       <string>일</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="month">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>980</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    font: 75 12pt &quot;D2Coding&quot;;
+    color: #444444;  /* White text color */
+    border-radius: 4px;
+	border: 1px solid #F68EAB;  /* Black border color */
+  	 background-color:#F68EAB;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_1">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>120</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="back_01">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>981</width>
+        <height>821</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+	background-color:#E2E2E2;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_2">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>120</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_3">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>120</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_4">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>120</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_7">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>120</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_6">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>120</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_5">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>120</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_2">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>150</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_3">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>150</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_4">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>150</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_5">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>150</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_6">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>150</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_7">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>150</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>330</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_8">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>300</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_14">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>300</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_11">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>330</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_9">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>300</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_11">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>300</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_13">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>300</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_13">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>330</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_10">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>330</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_10">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>300</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_12">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>300</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_9">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>330</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_14">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>330</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_12">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>330</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_21">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>510</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_16">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>480</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_15">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>480</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_17">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>480</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_17">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>510</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_18">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>480</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_18">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>510</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_21">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>480</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_15">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>510</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_20">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>510</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_20">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>480</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_19">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>510</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_19">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>480</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_16">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>510</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_28">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>690</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_26">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>660</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_25">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>660</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_23">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>690</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_24">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>660</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_28">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>660</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_26">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>690</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_22">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>690</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_23">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>660</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_25">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>690</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_22">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>660</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_27">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>690</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_27">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>660</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_24">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>690</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_33">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>840</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_30">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>840</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_29">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>870</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_33">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>870</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_31">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>870</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_34">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>870</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_34">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>840</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_29">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>840</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_32">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>840</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_35">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>870</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_35">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>840</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_32">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>870</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="d_30">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>870</y>
+        <width>141</width>
+        <height>152</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FDFDFD;
+	border: 1px solid #8C8EB8;  /* Black border color */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="day_31">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>840</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#9F9BBC;
+color:#FDFDFD;
+padding:2px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>491</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <widget class="QPushButton" name="_8">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>10</y>
+         <width>75</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FAF1F2;  /* 탭 위젯 배경색 */
+	border-radius: 10px;
+}</string>
+       </property>
+       <property name="text">
+        <string>8월</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="_5">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>10</y>
+         <width>75</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FAF1F2;  /* 탭 위젯 배경색 */
+	border-radius: 10px;
+}</string>
+       </property>
+       <property name="text">
+        <string>5월</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="_7">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>10</y>
+         <width>75</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FAF1F2;  /* 탭 위젯 배경색 */
+	border-radius: 10px;
+}</string>
+       </property>
+       <property name="text">
+        <string>7월</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>75</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FAF1F2;  /* 탭 위젯 배경색 */
+	border-radius: 10px;
+}</string>
+       </property>
+       <property name="text">
+        <string>3월</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="_6">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>10</y>
+         <width>75</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FAF1F2;  /* 탭 위젯 배경색 */
+	border-radius: 10px;
+}</string>
+       </property>
+       <property name="text">
+        <string>6월</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="_4">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>10</y>
+         <width>75</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FAF1F2;  /* 탭 위젯 배경색 */
+	border-radius: 10px;
+}</string>
+       </property>
+       <property name="text">
+        <string>4월</string>
+       </property>
+      </widget>
+     </widget>
+     <zorder>back_01</zorder>
+     <zorder>month</zorder>
+     <zorder>widget</zorder>
+     <zorder>day_back</zorder>
+     <zorder>w_1</zorder>
+     <zorder>w_2</zorder>
+     <zorder>w_3</zorder>
+     <zorder>w_4</zorder>
+     <zorder>w_5</zorder>
+     <zorder>w_6</zorder>
+     <zorder>w_7</zorder>
+     <zorder>day_1</zorder>
+     <zorder>d_1</zorder>
+     <zorder>day_2</zorder>
+     <zorder>day_3</zorder>
+     <zorder>day_4</zorder>
+     <zorder>day_7</zorder>
+     <zorder>day_6</zorder>
+     <zorder>day_5</zorder>
+     <zorder>d_2</zorder>
+     <zorder>d_3</zorder>
+     <zorder>d_4</zorder>
+     <zorder>d_5</zorder>
+     <zorder>d_6</zorder>
+     <zorder>d_7</zorder>
+     <zorder>d_8</zorder>
+     <zorder>day_8</zorder>
+     <zorder>day_14</zorder>
+     <zorder>d_11</zorder>
+     <zorder>day_9</zorder>
+     <zorder>day_11</zorder>
+     <zorder>day_13</zorder>
+     <zorder>d_13</zorder>
+     <zorder>d_10</zorder>
+     <zorder>day_10</zorder>
+     <zorder>day_12</zorder>
+     <zorder>d_9</zorder>
+     <zorder>d_14</zorder>
+     <zorder>d_12</zorder>
+     <zorder>d_21</zorder>
+     <zorder>day_16</zorder>
+     <zorder>day_15</zorder>
+     <zorder>day_17</zorder>
+     <zorder>d_17</zorder>
+     <zorder>day_18</zorder>
+     <zorder>d_18</zorder>
+     <zorder>day_21</zorder>
+     <zorder>d_15</zorder>
+     <zorder>d_20</zorder>
+     <zorder>day_20</zorder>
+     <zorder>d_19</zorder>
+     <zorder>day_19</zorder>
+     <zorder>d_16</zorder>
+     <zorder>d_28</zorder>
+     <zorder>day_26</zorder>
+     <zorder>day_25</zorder>
+     <zorder>d_23</zorder>
+     <zorder>day_24</zorder>
+     <zorder>day_28</zorder>
+     <zorder>d_26</zorder>
+     <zorder>d_22</zorder>
+     <zorder>day_23</zorder>
+     <zorder>d_25</zorder>
+     <zorder>day_22</zorder>
+     <zorder>d_27</zorder>
+     <zorder>day_27</zorder>
+     <zorder>d_24</zorder>
+     <zorder>day_33</zorder>
+     <zorder>day_30</zorder>
+     <zorder>d_29</zorder>
+     <zorder>d_33</zorder>
+     <zorder>d_31</zorder>
+     <zorder>d_34</zorder>
+     <zorder>day_34</zorder>
+     <zorder>day_29</zorder>
+     <zorder>day_32</zorder>
+     <zorder>d_35</zorder>
+     <zorder>day_35</zorder>
+     <zorder>d_32</zorder>
+     <zorder>d_30</zorder>
+     <zorder>day_31</zorder>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1430</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
