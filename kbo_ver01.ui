@@ -320,7 +320,7 @@ border: 2px solid #e2e2e2;</string>
         <x>710</x>
         <y>30</y>
         <width>491</width>
-        <height>371</height>
+        <height>551</height>
        </rect>
       </property>
       <widget class="QLabel" name="label_3">
@@ -329,7 +329,7 @@ border: 2px solid #e2e2e2;</string>
          <x>10</x>
          <y>10</y>
          <width>471</width>
-         <height>351</height>
+         <height>531</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -371,26 +371,168 @@ padding:4px</string>
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
-      <widget class="QLineEdit" name="new_list_item">
+      <widget class="QTableWidget" name="tableWidget_2">
        <property name="geometry">
         <rect>
-         <x>10</x>
+         <x>20</x>
          <y>50</y>
-         <width>461</width>
-         <height>311</height>
+         <width>421</width>
+         <height>481</height>
         </rect>
        </property>
-       <property name="styleSheet">
-        <string notr="true">background-color:rgb(249, 249, 249);
-font: 11pt &quot;D2Coding&quot;;</string>
+      </widget>
+      <widget class="QLabel" name="pageTitleLabel">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>30</y>
+         <width>301</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Agency FB</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
        </property>
       </widget>
+      <widget class="QLabel" name="la_6">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>190</y>
+         <width>311</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="la_9">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>330</y>
+         <width>311</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="la_5">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>150</y>
+         <width>311</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="la_10">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>370</y>
+         <width>311</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="la_4">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>120</y>
+         <width>311</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="la_8">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>290</y>
+         <width>301</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="la_7">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>240</y>
+         <width>301</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="la_3">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>80</y>
+         <width>311</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+      <zorder>tableWidget_2</zorder>
+      <zorder>pageTitleLabel</zorder>
+      <zorder>label_3</zorder>
+      <zorder>label_5</zorder>
+      <zorder>la_6</zorder>
+      <zorder>la_9</zorder>
+      <zorder>la_5</zorder>
+      <zorder>la_10</zorder>
+      <zorder>la_4</zorder>
+      <zorder>la_8</zorder>
+      <zorder>la_7</zorder>
+      <zorder>la_3</zorder>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>651</width>
+        <height>241</height>
+       </rect>
+      </property>
      </widget>
      <zorder>label_4</zorder>
      <zorder>team_rank_label</zorder>
      <zorder>label_2</zorder>
      <zorder>horizontalLayoutWidget</zorder>
      <zorder>new_Area</zorder>
+     <zorder>tableWidget</zorder>
     </widget>
     <widget class="QWidget" name="rank_tab">
      <attribute name="title">
@@ -406,11 +548,10 @@ font: 11pt &quot;D2Coding&quot;;</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">
-</string>
+       <string notr="true"/>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tusu_rank">
        <attribute name="title">
