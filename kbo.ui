@@ -1,0 +1,1555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1269</width>
+    <height>896</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+		background-color: #FBDEE2;
+}</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="kbo_tabWidget">
+      <property name="styleSheet">
+       <string notr="true">QTabWidget {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #E4E9F1;  /* 탭 위젯 배경색 */
+}
+
+QTabBar::tab {
+	
+    background-color: #E4E9F1;  /* 일반 탭의 배경색 */
+    color: #444444;  /* 탭 텍스트 색상 */
+    padding: 10px;  /* 탭의 패딩 */
+}
+
+QTabBar::tab:selected {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #CCDFDE;  /* 선택된 탭의 배경색 */
+    color: #000000;  /* 선택된 탭의 텍스트 색상 */
+}
+
+QTabBar::tab:hover {
+    background-color: #E4E9F1;  /* 마우스 오버 시 탭 배경색 */
+}</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="home_tab">
+       <attribute name="title">
+        <string>쪽</string>
+       </attribute>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>141</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>팀 순위</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>50</y>
+          <width>1031</width>
+          <height>311</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="rank_tab">
+       <attribute name="title">
+        <string>순위</string>
+       </attribute>
+       <widget class="QTabWidget" name="rankList_tab">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1101</width>
+          <height>541</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QTabWidget&quot; name=&quot;kbo_tabWidget&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;140&lt;/x&gt;
+     &lt;y&gt;70&lt;/y&gt;
+     &lt;width&gt;761&lt;/width&gt;
+     &lt;height&gt;451&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QTabWidget {
+	font: 75 12pt &amp;quot;D2Coding&amp;quot;;
+    background-color: #CBDDFB;  /* 탭 위젯 배경색 */
+}
+
+QTabBar::tab {
+	
+    background-color: #CBDDFB;  /* 일반 탭의 배경색 */
+    color: #444444;  /* 탭 텍스트 색상 */
+    padding: 10px;  /* 탭의 패딩 */
+}
+
+QTabBar::tab:selected {
+	font: 75 12pt &amp;quot;D2Coding&amp;quot;;
+    background-color: #CCDFDE;  /* 선택된 탭의 배경색 */
+    color: #000000;  /* 선택된 탭의 텍스트 색상 */
+}
+
+QTabBar::tab:hover {
+    background-color: #CBDDFB;  /* 마우스 오버 시 탭 배경색 */
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;currentIndex&quot;&gt;
+    &lt;number&gt;0&lt;/number&gt;
+   &lt;/property&gt;
+   &lt;widget class=&quot;QWidget&quot; name=&quot;rank_tab&quot;&gt;
+    &lt;attribute name=&quot;title&quot;&gt;
+     &lt;string&gt;순위&lt;/string&gt;
+    &lt;/attribute&gt;
+    &lt;widget class=&quot;QTabWidget&quot; name=&quot;rankList_tab&quot;&gt;
+     &lt;property name=&quot;geometry&quot;&gt;
+      &lt;rect&gt;
+       &lt;x&gt;-4&lt;/x&gt;
+       &lt;y&gt;0&lt;/y&gt;
+       &lt;width&gt;761&lt;/width&gt;
+       &lt;height&gt;411&lt;/height&gt;
+      &lt;/rect&gt;
+     &lt;/property&gt;
+		
+     &lt;property name=&quot;currentIndex&quot;&gt;
+      &lt;number&gt;0&lt;/number&gt;
+     &lt;/property&gt;
+     &lt;widget class=&quot;QWidget&quot; name=&quot;tusu_rank&quot;&gt;
+      &lt;attribute name=&quot;title&quot;&gt;
+       &lt;string&gt;투수 순위&lt;/string&gt;
+      &lt;/attribute&gt;
+     &lt;/widget&gt;
+     &lt;widget class=&quot;QWidget&quot; name=&quot;taja_rank&quot;&gt;
+      &lt;attribute name=&quot;title&quot;&gt;
+       &lt;string&gt;타자 순위&lt;/string&gt;
+      &lt;/attribute&gt;
+     &lt;/widget&gt;
+    &lt;/widget&gt;
+   &lt;/widget&gt;
+   &lt;widget class=&quot;QWidget&quot; name=&quot;info_tab&quot;&gt;
+    &lt;attribute name=&quot;title&quot;&gt;
+     &lt;string&gt;선수정보&lt;/string&gt;
+    &lt;/attribute&gt;
+   &lt;/widget&gt;
+   &lt;widget class=&quot;QWidget&quot; name=&quot;schedule_tab&quot;&gt;
+    &lt;attribute name=&quot;title&quot;&gt;
+     &lt;string&gt;일정&lt;/string&gt;
+    &lt;/attribute&gt;
+   &lt;/widget&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+</string>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tusu_rank">
+         <attribute name="title">
+          <string>투수 순위</string>
+         </attribute>
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>1091</width>
+            <height>491</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+
+    background-color: #FFF5EC;  /* 탭 위젯 배경색 */
+}</string>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="taja_rank">
+         <attribute name="title">
+          <string>타자 순위</string>
+         </attribute>
+         <widget class="QTableWidget" name="table_taja">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>1101</width>
+            <height>491</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>D2Coding</family>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="rowCount">
+           <number>1</number>
+          </property>
+          <property name="columnCount">
+           <number>7</number>
+          </property>
+          <row/>
+          <column>
+           <property name="text">
+            <string>순위</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>선수</string>
+           </property>
+          </column>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="info_tab">
+       <attribute name="title">
+        <string>선수정보</string>
+       </attribute>
+       <widget class="QTableWidget" name="player_Info">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1101</width>
+          <height>551</height>
+         </rect>
+        </property>
+        <property name="rowCount">
+         <number>1</number>
+        </property>
+        <property name="columnCount">
+         <number>10</number>
+        </property>
+        <row/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="schedule_tab">
+       <attribute name="title">
+        <string>일정</string>
+       </attribute>
+       <widget class="QLabel" name="w_1">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>80</y>
+          <width>141</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::WheelFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #CCCCCC;  /* Gray background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>월</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_1">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>120</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="w_2">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>80</y>
+          <width>141</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #CCCCCC;  /* Gray background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>화</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="w_3">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>80</y>
+          <width>141</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #CCCCCC;  /* Gray background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>수</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="w_4">
+        <property name="geometry">
+         <rect>
+          <x>520</x>
+          <y>80</y>
+          <width>141</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #CCCCCC;  /* Gray background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>목</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="w_5">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>80</y>
+          <width>141</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #CCCCCC;  /* Gray background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>금</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="w_6">
+        <property name="geometry">
+         <rect>
+          <x>800</x>
+          <y>80</y>
+          <width>141</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #CCCCCC;  /* Gray background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>토</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="w_7">
+        <property name="geometry">
+         <rect>
+          <x>940</x>
+          <y>80</y>
+          <width>141</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #CCCCCC;  /* Gray background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>일</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_2">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>120</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_3">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>120</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_4">
+        <property name="geometry">
+         <rect>
+          <x>520</x>
+          <y>120</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_5">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>120</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_6">
+        <property name="geometry">
+         <rect>
+          <x>800</x>
+          <y>120</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_7">
+        <property name="geometry">
+         <rect>
+          <x>940</x>
+          <y>120</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_8">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>230</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_9">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>230</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_10">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>230</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_11">
+        <property name="geometry">
+         <rect>
+          <x>520</x>
+          <y>230</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_12">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>230</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_13">
+        <property name="geometry">
+         <rect>
+          <x>800</x>
+          <y>230</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_14">
+        <property name="geometry">
+         <rect>
+          <x>940</x>
+          <y>230</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_15">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>340</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_16">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>340</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_17">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>340</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_18">
+        <property name="geometry">
+         <rect>
+          <x>520</x>
+          <y>340</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_19">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>340</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_20">
+        <property name="geometry">
+         <rect>
+          <x>800</x>
+          <y>340</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_22">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>450</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_23">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>450</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_24">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>450</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_25">
+        <property name="geometry">
+         <rect>
+          <x>520</x>
+          <y>450</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_26">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>450</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_27">
+        <property name="geometry">
+         <rect>
+          <x>800</x>
+          <y>450</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_28">
+        <property name="geometry">
+         <rect>
+          <x>940</x>
+          <y>450</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_29">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>560</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_30">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>560</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_31">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>560</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_32">
+        <property name="geometry">
+         <rect>
+          <x>520</x>
+          <y>560</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_33">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>560</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_34">
+        <property name="geometry">
+         <rect>
+          <x>800</x>
+          <y>560</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="d_35">
+        <property name="geometry">
+         <rect>
+          <x>940</x>
+          <y>560</y>
+          <width>141</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="margin">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="_3">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>10</y>
+          <width>75</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FAF1F2;  /* 탭 위젯 배경색 */
+	border-radius: 10px;
+}</string>
+        </property>
+        <property name="text">
+         <string>3월</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="_4">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>10</y>
+          <width>75</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FAF1F2;  /* 탭 위젯 배경색 */
+	border-radius: 10px;
+}</string>
+        </property>
+        <property name="text">
+         <string>4월</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="_5">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>10</y>
+          <width>75</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FAF1F2;  /* 탭 위젯 배경색 */
+	border-radius: 10px;
+}</string>
+        </property>
+        <property name="text">
+         <string>5월</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="_6">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>10</y>
+          <width>75</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FAF1F2;  /* 탭 위젯 배경색 */
+	border-radius: 10px;
+}</string>
+        </property>
+        <property name="text">
+         <string>6월</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="_7">
+        <property name="geometry">
+         <rect>
+          <x>710</x>
+          <y>10</y>
+          <width>75</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FAF1F2;  /* 탭 위젯 배경색 */
+	border-radius: 10px;
+}</string>
+        </property>
+        <property name="text">
+         <string>7월</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="_8">
+        <property name="geometry">
+         <rect>
+          <x>840</x>
+          <y>10</y>
+          <width>75</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FAF1F2;  /* 탭 위젯 배경색 */
+	border-radius: 10px;
+}</string>
+        </property>
+        <property name="text">
+         <string>8월</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="month">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>60</y>
+          <width>981</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FF0000;  /* Red background color */
+    color: #FFFFFF;  /* White text color */
+    border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QScrollArea" name="scrollArea">
+        <property name="geometry">
+         <rect>
+          <x>930</x>
+          <y>330</y>
+          <width>161</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::WheelFocus</enum>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>159</width>
+           <height>129</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="d_21">
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FFFFFF;  /* White background color */
+	border-radius: 10px;
+    border: 1px solid #000000;  /* Black border color */
+}
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="margin">
+             <number>10</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <zorder>scrollArea</zorder>
+       <zorder>w_1</zorder>
+       <zorder>d_1</zorder>
+       <zorder>w_2</zorder>
+       <zorder>w_3</zorder>
+       <zorder>w_4</zorder>
+       <zorder>w_5</zorder>
+       <zorder>w_6</zorder>
+       <zorder>w_7</zorder>
+       <zorder>d_2</zorder>
+       <zorder>d_3</zorder>
+       <zorder>d_4</zorder>
+       <zorder>d_5</zorder>
+       <zorder>d_6</zorder>
+       <zorder>d_7</zorder>
+       <zorder>d_8</zorder>
+       <zorder>d_9</zorder>
+       <zorder>d_10</zorder>
+       <zorder>d_11</zorder>
+       <zorder>d_12</zorder>
+       <zorder>d_13</zorder>
+       <zorder>d_14</zorder>
+       <zorder>d_15</zorder>
+       <zorder>d_16</zorder>
+       <zorder>d_17</zorder>
+       <zorder>d_18</zorder>
+       <zorder>d_19</zorder>
+       <zorder>d_20</zorder>
+       <zorder>d_22</zorder>
+       <zorder>d_23</zorder>
+       <zorder>d_24</zorder>
+       <zorder>d_25</zorder>
+       <zorder>d_26</zorder>
+       <zorder>d_27</zorder>
+       <zorder>d_28</zorder>
+       <zorder>d_29</zorder>
+       <zorder>d_30</zorder>
+       <zorder>d_31</zorder>
+       <zorder>d_32</zorder>
+       <zorder>d_33</zorder>
+       <zorder>d_34</zorder>
+       <zorder>d_35</zorder>
+       <zorder>_3</zorder>
+       <zorder>_4</zorder>
+       <zorder>_5</zorder>
+       <zorder>_6</zorder>
+       <zorder>_7</zorder>
+       <zorder>_8</zorder>
+       <zorder>month</zorder>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1269</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuhome">
+    <property name="title">
+     <string>home</string>
+    </property>
+   </widget>
+   <addaction name="menuhome"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
