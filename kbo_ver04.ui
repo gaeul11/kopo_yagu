@@ -25,7 +25,7 @@
      <rect>
       <x>20</x>
       <y>10</y>
-      <width>1331</width>
+      <width>1271</width>
       <height>1091</height>
      </rect>
     </property>
@@ -58,7 +58,7 @@ QTabBar::tab:hover {
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="home_tab">
      <attribute name="title">
@@ -69,8 +69,8 @@ QTabBar::tab:hover {
        <rect>
         <x>800</x>
         <y>30</y>
-        <width>501</width>
-        <height>451</height>
+        <width>461</width>
+        <height>441</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -81,7 +81,7 @@ QTabBar::tab:hover {
         <rect>
          <x>10</x>
          <y>10</y>
-         <width>481</width>
+         <width>471</width>
          <height>431</height>
         </rect>
        </property>
@@ -98,7 +98,7 @@ font: 11pt &quot;D2Coding&quot;;</string>
         <rect>
          <x>10</x>
          <y>10</y>
-         <width>481</width>
+         <width>461</width>
          <height>41</height>
         </rect>
        </property>
@@ -236,27 +236,6 @@ font: 11pt &quot;D2Coding&quot;;</string>
 font: 11pt &quot;D2Coding&quot;;</string>
        </property>
       </widget>
-      <widget class="QTableWidget" name="tableWidget_5">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>50</y>
-         <width>481</width>
-         <height>391</height>
-        </rect>
-       </property>
-      </widget>
-      <zorder>tableWidget_5</zorder>
-      <zorder>label_3</zorder>
-      <zorder>label_5</zorder>
-      <zorder>new_list_item_01</zorder>
-      <zorder>new_list_item_2</zorder>
-      <zorder>new_list_item_3</zorder>
-      <zorder>new_list_item_4</zorder>
-      <zorder>new_list_item_5</zorder>
-      <zorder>new_list_item_6</zorder>
-      <zorder>new_list_item_7</zorder>
-      <zorder>new_list_item_8</zorder>
      </widget>
      <widget class="QWidget" name="rank_widget" native="true">
       <property name="geometry">
@@ -264,7 +243,7 @@ font: 11pt &quot;D2Coding&quot;;</string>
         <x>10</x>
         <y>30</y>
         <width>761</width>
-        <height>451</height>
+        <height>441</height>
        </rect>
       </property>
       <widget class="QLabel" name="label_2">
@@ -302,7 +281,7 @@ padding:10px;
          <x>0</x>
          <y>0</y>
          <width>761</width>
-         <height>441</height>
+         <height>431</height>
         </rect>
        </property>
        <property name="font">
@@ -506,7 +485,7 @@ padding:4px</string>
          <x>10</x>
          <y>90</y>
          <width>741</width>
-         <height>341</height>
+         <height>331</height>
         </rect>
        </property>
       </widget>
@@ -533,92 +512,30 @@ padding:4px</string>
        <string notr="true"/>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tusu_rank">
        <attribute name="title">
         <string>투수 순위</string>
        </attribute>
-       <widget class="QWidget" name="widget_6" native="true">
+       <widget class="QLabel" name="label">
         <property name="geometry">
          <rect>
-          <x>10</x>
-          <y>10</y>
-          <width>1071</width>
-          <height>731</height>
+          <x>0</x>
+          <y>0</y>
+          <width>1091</width>
+          <height>491</height>
          </rect>
         </property>
-        <widget class="QPushButton" name="pushButton_2">
-         <property name="geometry">
-          <rect>
-           <x>180</x>
-           <y>10</y>
-           <width>81</width>
-           <height>31</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color : #F68EAB;
-font: 11pt &quot;D2Coding&quot;;
-color : #ffffff;
-padding:4px</string>
-         </property>
-         <property name="text">
-          <string>세이브</string>
-         </property>
-        </widget>
-        <widget class="QTableWidget" name="tableWidget_week_3">
-         <property name="geometry">
-          <rect>
-           <x>0</x>
-           <y>50</y>
-           <width>971</width>
-           <height>601</height>
-          </rect>
-         </property>
-        </widget>
-        <widget class="QPushButton" name="pushButton_1">
-         <property name="geometry">
-          <rect>
-           <x>90</x>
-           <y>10</y>
-           <width>81</width>
-           <height>31</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color : #F68EAB;
-font: 11pt &quot;D2Coding&quot;;
-color : #ffffff;
-padding:4px</string>
-         </property>
-         <property name="text">
-          <string>승</string>
-         </property>
-        </widget>
-        <widget class="QPushButton" name="pushButton_4">
-         <property name="geometry">
-          <rect>
-           <x>0</x>
-           <y>10</y>
-           <width>81</width>
-           <height>31</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color : #F68EAB;
-font: 11pt &quot;D2Coding&quot;;
-color : #ffffff;
-padding:4px</string>
-         </property>
-         <property name="text">
-          <string>평균자책</string>
-         </property>
-        </widget>
-        <zorder>tableWidget_week_3</zorder>
-        <zorder>pushButton_2</zorder>
-        <zorder>pushButton_1</zorder>
-        <zorder>pushButton_4</zorder>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+
+    background-color: #FFF5EC;  /* 탭 위젯 배경색 */
+}</string>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
        </widget>
       </widget>
       <widget class="QWidget" name="taja_rank">
@@ -637,25 +554,6 @@ padding:4px</string>
         <widget class="QPushButton" name="pushButton_3">
          <property name="geometry">
           <rect>
-           <x>10</x>
-           <y>10</y>
-           <width>81</width>
-           <height>31</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color : #F68EAB;
-font: 11pt &quot;D2Coding&quot;;
-color : #ffffff;
-padding:4px</string>
-         </property>
-         <property name="text">
-          <string>타율</string>
-         </property>
-        </widget>
-        <widget class="QPushButton" name="pushButton_5">
-         <property name="geometry">
-          <rect>
            <x>100</x>
            <y>10</y>
            <width>81</width>
@@ -663,32 +561,30 @@ padding:4px</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color : #F68EAB;
-font: 11pt &quot;D2Coding&quot;;
-color : #ffffff;
-padding:4px</string>
+          <string notr="true">font: 11pt &quot;D2Coding&quot;;
+background-color:#F68EAB;
+color:#FCFCFC;</string>
          </property>
          <property name="text">
-          <string>홈런</string>
+          <string>승리</string>
          </property>
         </widget>
-        <widget class="QPushButton" name="pushButton_6">
+        <widget class="QPushButton" name="pushButton">
          <property name="geometry">
           <rect>
-           <x>190</x>
+           <x>10</x>
            <y>10</y>
            <width>81</width>
            <height>31</height>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color : #F68EAB;
-font: 11pt &quot;D2Coding&quot;;
-color : #ffffff;
-padding:4px</string>
+          <string notr="true">font: 11pt &quot;D2Coding&quot;;
+background-color:#F68EAB;
+color:#FCFCFC;</string>
          </property>
          <property name="text">
-          <string>도루</string>
+          <string>평균자책</string>
          </property>
         </widget>
        </widget>
@@ -3203,12 +3099,12 @@ padding:2px;
         <height>61</height>
        </rect>
       </property>
-      <widget class="QLineEdit" name="searchbar">
+      <widget class="QLineEdit" name="lineEdit">
        <property name="geometry">
         <rect>
-         <x>420</x>
+         <x>320</x>
          <y>10</y>
-         <width>191</width>
+         <width>291</width>
          <height>41</height>
         </rect>
        </property>
@@ -3216,7 +3112,7 @@ padding:2px;
       <widget class="QPushButton" name="searchButton">
        <property name="geometry">
         <rect>
-         <x>610</x>
+         <x>540</x>
          <y>10</y>
          <width>75</width>
          <height>41</height>
@@ -3253,7 +3149,7 @@ padding:2px;
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">/* background-color: #FCFCFC;*/</string>
+        <string notr="true"> background-color: #FCFCFC;</string>
        </property>
        <property name="text">
         <string/>
@@ -3265,14 +3161,14 @@ padding:2px;
       <widget class="QLabel" name="label_7">
        <property name="geometry">
         <rect>
-         <x>70</x>
-         <y>80</y>
-         <width>141</width>
-         <height>161</height>
+         <x>60</x>
+         <y>40</y>
+         <width>161</width>
+         <height>201</height>
         </rect>
        </property>
        <property name="styleSheet">
-        <string notr="true">/* background-color: #FCFCFC;*/</string>
+        <string notr="true"> background-color: #FCFCFC;</string>
        </property>
        <property name="text">
         <string/>
@@ -3302,7 +3198,7 @@ padding:2px;
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">/* background-color: #FCFCFC;*/</string>
+        <string notr="true"> background-color: #FCFCFC;</string>
        </property>
        <property name="text">
         <string/>
@@ -3328,7 +3224,7 @@ padding:2px;
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">/* background-color: #FCFCFC;*/</string>
+        <string notr="true"> background-color: #FCFCFC;</string>
        </property>
        <property name="text">
         <string/>
