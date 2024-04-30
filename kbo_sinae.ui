@@ -610,17 +610,20 @@ QTabBar::tab:hover {
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>470</x>
+        <x>120</x>
         <y>70</y>
         <width>141</width>
-        <height>191</height>
+        <height>171</height>
        </rect>
       </property>
       <property name="text">
-       <string>저작권 문제로 인한 이미지 사용 불가</string>
+       <string/>
       </property>
       <property name="textFormat">
        <enum>Qt::AutoText</enum>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../Pictures/Screenshots/스크린샷 2024-04-30 135427.png</pixmap>
       </property>
      </widget>
      <widget class="QPushButton" name="searchButton">
@@ -636,17 +639,7 @@ QTabBar::tab:hover {
        <string>검색</string>
       </property>
      </widget>
-     <widget class="QTableWidget" name="tableWidget_3">
-      <property name="geometry">
-       <rect>
-        <x>350</x>
-        <y>390</y>
-        <width>381</width>
-        <height>191</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lineEdit">
+     <widget class="QLineEdit" name="searchbar">
       <property name="geometry">
        <rect>
         <x>410</x>
@@ -659,27 +652,229 @@ QTabBar::tab:hover {
      <widget class="QLabel" name="label_playername">
       <property name="geometry">
        <rect>
-        <x>430</x>
-        <y>270</y>
-        <width>251</width>
-        <height>31</height>
+        <x>80</x>
+        <y>250</y>
+        <width>231</width>
+        <height>21</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
       </property>
       <property name="text">
        <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
      <widget class="QLabel" name="label_playerinfo">
       <property name="geometry">
        <rect>
-        <x>430</x>
-        <y>310</y>
-        <width>251</width>
+        <x>80</x>
+        <y>280</y>
+        <width>231</width>
         <height>31</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
       <property name="text">
        <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_playerinfo_2">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>340</y>
+        <width>231</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>170</y>
+        <width>311</width>
+        <height>501</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_playername_2">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>50</y>
+        <width>271</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Agency FB</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>170</y>
+        <width>301</width>
+        <height>501</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="playerInfo_Week_2">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>80</y>
+        <width>311</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+	background-color : #eb1085;
+	border: 2px solid blue;
+	color : white;
+	font-size : 14;
+	padding-right:10px;</string>
+      </property>
+      <property name="text">
+       <string>수상내역 / 주요랭킹</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="player_info_rank_2">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>120</y>
+        <width>311</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+	background-color : #ebe1e6;
+	color : #595859;
+	font-size : 14;
+	padding-right:15px;</string>
+      </property>
+      <property name="text">
+       <string> 연도              수상내역</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="playerInfo_Week_3">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>80</y>
+        <width>311</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+	background-color : #eb1085;
+	border: 2px solid blue;
+	color : white;
+	font-size : 14;
+	padding-right:10px;</string>
+      </property>
+      <property name="text">
+       <string>WAR/144</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="player_info_rank_3">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>120</y>
+        <width>311</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+	background-color : #ebe1e6;
+	color : #595859;
+	font-size : 14;
+	padding-right:15px;</string>
+      </property>
+      <property name="text">
+       <string> Year       WAR/144      WAR     Rank</string>
       </property>
      </widget>
     </widget>
