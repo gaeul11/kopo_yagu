@@ -11,7 +11,7 @@ from PyQt5.QtCore import QUrl
 
 # UI 파일 로드
 root = os.path.dirname(os.path.abspath(__file__))
-MainUI = uic.loadUiType(os.path.join(root, 'kbo_ver04.ui'))[0]
+MainUI = uic.loadUiType(os.path.join(root, 'kbo_ver02.ui'))[0]
 
 # ChromeDriver 자동 관리
 service = Service(executable_path=ChromeDriverManager().install())
@@ -118,11 +118,11 @@ class MainDialog(QMainWindow):
         # 라벨에 뉴스 제목 설정
         for i, element in enumerate(news_elements):
             if i < 8:
+                # label_name = f"la_{i + 3}"
                 label_name = f"new_list_item_{i + 1}"
                 label = getattr(self.ui, label_name)
                 link = element.find_element(By.TAG_NAME, "a")
-                news_title = link.text[:33] + "..." if len(link.text) > 33 else link.text
-                label.setText(f"{i + 1}. {news_title}")
+                label.setText(f"{i+1}. {link.text}")
 
                 # 라벨에 클릭 이벤트 연결
                 label.mousePressEvent = lambda event, link=link: self.on_news_label_clicked(link)
