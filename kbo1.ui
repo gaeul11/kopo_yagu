@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1276</width>
+    <height>884</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+		background-color: #FBDEE2;
+}</string>
+   </property>
+   <widget class="QTabWidget" name="kbo_tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>50</y>
+      <width>1181</width>
+      <height>791</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1181</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabWidget {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #E4E9F1;  /* 탭 위젯 배경색 */
+}
+
+QTabBar::tab {
+	
+    background-color: #E4E9F1;  /* 일반 탭의 배경색 */
+    color: #444444;  /* 탭 텍스트 색상 */
+    padding: 10px;  /* 탭의 패딩 */
+}
+
+QTabBar::tab:selected {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #CCDFDE;  /* 선택된 탭의 배경색 */
+    color: #000000;  /* 선택된 탭의 텍스트 색상 */
+}
+
+QTabBar::tab:hover {
+    background-color: #E4E9F1;  /* 마우스 오버 시 탭 배경색 */
+}</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="rank_tab">
+     <attribute name="title">
+      <string>순위</string>
+     </attribute>
+     <widget class="QTabWidget" name="rankList_tab">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1101</width>
+        <height>681</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;QTabWidget&quot; name=&quot;kbo_tabWidget&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;140&lt;/x&gt;
+     &lt;y&gt;70&lt;/y&gt;
+     &lt;width&gt;761&lt;/width&gt;
+     &lt;height&gt;451&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QTabWidget {
+	font: 75 12pt &amp;quot;D2Coding&amp;quot;;
+    background-color: #CBDDFB;  /* 탭 위젯 배경색 */
+}
+
+QTabBar::tab {
+	
+    background-color: #CBDDFB;  /* 일반 탭의 배경색 */
+    color: #444444;  /* 탭 텍스트 색상 */
+    padding: 10px;  /* 탭의 패딩 */
+}
+
+QTabBar::tab:selected {
+	font: 75 12pt &amp;quot;D2Coding&amp;quot;;
+    background-color: #CCDFDE;  /* 선택된 탭의 배경색 */
+    color: #000000;  /* 선택된 탭의 텍스트 색상 */
+}
+
+QTabBar::tab:hover {
+    background-color: #CBDDFB;  /* 마우스 오버 시 탭 배경색 */
+}&lt;/string&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;currentIndex&quot;&gt;
+    &lt;number&gt;0&lt;/number&gt;
+   &lt;/property&gt;
+   &lt;widget class=&quot;QWidget&quot; name=&quot;rank_tab&quot;&gt;
+    &lt;attribute name=&quot;title&quot;&gt;
+     &lt;string&gt;순위&lt;/string&gt;
+    &lt;/attribute&gt;
+    &lt;widget class=&quot;QTabWidget&quot; name=&quot;rankList_tab&quot;&gt;
+     &lt;property name=&quot;geometry&quot;&gt;
+      &lt;rect&gt;
+       &lt;x&gt;-4&lt;/x&gt;
+       &lt;y&gt;0&lt;/y&gt;
+       &lt;width&gt;761&lt;/width&gt;
+       &lt;height&gt;411&lt;/height&gt;
+      &lt;/rect&gt;
+     &lt;/property&gt;
+		
+     &lt;property name=&quot;currentIndex&quot;&gt;
+      &lt;number&gt;0&lt;/number&gt;
+     &lt;/property&gt;
+     &lt;widget class=&quot;QWidget&quot; name=&quot;tusu_rank&quot;&gt;
+      &lt;attribute name=&quot;title&quot;&gt;
+       &lt;string&gt;투수 순위&lt;/string&gt;
+      &lt;/attribute&gt;
+     &lt;/widget&gt;
+     &lt;widget class=&quot;QWidget&quot; name=&quot;taja_rank&quot;&gt;
+      &lt;attribute name=&quot;title&quot;&gt;
+       &lt;string&gt;타자 순위&lt;/string&gt;
+      &lt;/attribute&gt;
+     &lt;/widget&gt;
+    &lt;/widget&gt;
+   &lt;/widget&gt;
+   &lt;widget class=&quot;QWidget&quot; name=&quot;info_tab&quot;&gt;
+    &lt;attribute name=&quot;title&quot;&gt;
+     &lt;string&gt;선수정보&lt;/string&gt;
+    &lt;/attribute&gt;
+   &lt;/widget&gt;
+   &lt;widget class=&quot;QWidget&quot; name=&quot;schedule_tab&quot;&gt;
+    &lt;attribute name=&quot;title&quot;&gt;
+     &lt;string&gt;일정&lt;/string&gt;
+    &lt;/attribute&gt;
+   &lt;/widget&gt;
+  &lt;/widget&gt;
+ &lt;/widget&gt;
+ &lt;resources/&gt;
+&lt;/ui&gt;
+</string>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tusu_rank">
+       <attribute name="title">
+        <string>투수 순위</string>
+       </attribute>
+       <widget class="QScrollArea" name="scrollArea">
+        <property name="geometry">
+         <rect>
+          <x>29</x>
+          <y>39</y>
+          <width>991</width>
+          <height>571</height>
+         </rect>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>989</width>
+           <height>569</height>
+          </rect>
+         </property>
+         <widget class="QTableWidget" name="tableWidget_week_2">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>971</width>
+            <height>571</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QPushButton" name="pushButton">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>평균자책</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_1">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>0</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>승</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>0</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>세이브</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="taja_rank">
+       <attribute name="title">
+        <string>타자 순위</string>
+       </attribute>
+       <widget class="QScrollArea" name="scrollArea_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>30</y>
+          <width>1101</width>
+          <height>601</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #FFFFFFF;</string>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOn</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAsNeeded</enum>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="player_Scroll_2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>1082</width>
+           <height>599</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: #FFFFFF;</string>
+         </property>
+         <widget class="QTableWidget" name="tableWidget_week_3">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>1091</width>
+            <height>611</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>0</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>도루</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>타율</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>0</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>홈런</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="info_tab">
+     <attribute name="title">
+      <string>선수정보</string>
+     </attribute>
+     <widget class="QScrollArea" name="scrollArea_1">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>110</y>
+        <width>461</width>
+        <height>631</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #FFFFFFF;</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="player_Scroll">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>442</width>
+         <height>629</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #FFFFFF;</string>
+       </property>
+       <widget class="QTableWidget" name="tableWidget_week">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>441</width>
+          <height>631</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="player_info_rank">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>70</y>
+        <width>461</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+	background-color : #ebe1e6;
+	color : #595859;
+	font-size : 14;
+	padding-right:15px;</string>
+      </property>
+      <property name="text">
+       <string>순위       이름          조회수</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="playerInfo_Week">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>30</y>
+        <width>461</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+	background-color : #eb1085;
+	border: 2px solid blue;
+	color : white;
+	font-size : 14;
+	padding-right:10px;</string>
+      </property>
+      <property name="text">
+       <string>선수조회 순위(1주일)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="playerInfo_total">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>30</y>
+        <width>461</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+	background-color : #eb1085;
+	border: 2px solid blue;
+	color : white;
+	font-size : 14;
+	padding-right:10px;</string>
+      </property>
+      <property name="text">
+       <string>선수조회 순위(통산)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="player_info_totalRank">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>70</y>
+        <width>461</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+	background-color : #ebe1e6;
+	color : #595859;
+	font-size : 14;
+	padding-right:15px;</string>
+      </property>
+      <property name="text">
+       <string>순위       이름         조회수</string>
+      </property>
+     </widget>
+     <widget class="QScrollArea" name="scrollArea_2">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>110</y>
+        <width>461</width>
+        <height>631</height>
+       </rect>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="player_Scroll_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>442</width>
+         <height>629</height>
+        </rect>
+       </property>
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>441</width>
+          <height>631</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <zorder>scrollArea_1</zorder>
+     <zorder>player_info_rank</zorder>
+     <zorder>playerInfo_Week</zorder>
+     <zorder>player_info_totalRank</zorder>
+     <zorder>playerInfo_total</zorder>
+     <zorder>scrollArea_2</zorder>
+    </widget>
+    <widget class="QWidget" name="schedule_tab">
+     <attribute name="title">
+      <string>일정</string>
+     </attribute>
+     <widget class="QLabel" name="scedule_Label">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>90</y>
+        <width>230</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #E4E9F1;  /* 탭 위젯 배경색 */
+}</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="nextDay">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>90</y>
+        <width>50</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+		 background-color : #F4EBE7;
+		color : #444444;
+}</string>
+      </property>
+      <property name="text">
+       <string>&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="previousDay">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>90</y>
+        <width>50</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>D2Coding</family>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+		 background-color : #F4EBE7;
+		color : #444444;
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="background_no_fun">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>180</y>
+        <width>1031</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font: 75 12pt &quot;D2Coding&quot;;
+    background-color: #FAF1F2;  /* 탭 위젯 배경색 */
+	border-radius: 10px;
+}</string>
+      </property>
+      <property name="text">
+       <string>KBO 경기일정</string>
+      </property>
+      <property name="margin">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QListView" name="dayChedule_List">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>230</y>
+        <width>1031</width>
+        <height>351</height>
+       </rect>
+      </property>
+     </widget>
+     <zorder>dayChedule_List</zorder>
+     <zorder>background_no_fun</zorder>
+     <zorder>scedule_Label</zorder>
+     <zorder>nextDay</zorder>
+     <zorder>previousDay</zorder>
+    </widget>
+    <widget class="QWidget" name="search_tab">
+     <attribute name="title">
+      <string>선수검색</string>
+     </attribute>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>70</y>
+        <width>141</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>저작권 문제로 인한 이미지 사용 불가</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="searchButton">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>10</y>
+        <width>75</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>검색</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>200</y>
+        <width>381</width>
+        <height>191</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>390</y>
+        <width>381</width>
+        <height>191</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>10</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1276</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
