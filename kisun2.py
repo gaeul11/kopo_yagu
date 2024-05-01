@@ -11,7 +11,7 @@ class KBOApp(QMainWindow):
     def __init__(self):
         super().__init__()
         # UI 파일 불러오기
-        ui_file = QFile("kbo1.ui")
+        ui_file = QFile("kbo_ver05.ui")
         ui_file.open(QFile.ReadOnly)
         self.ui = loadUi(ui_file)
         ui_file.close()
