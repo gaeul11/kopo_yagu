@@ -11,17 +11,17 @@ class KBOApp(QMainWindow):
     def __init__(self):
         super().__init__()
         # UI 파일 불러오기
-        ui_file = QFile("kbo1.ui")
+        ui_file = QFile("kbo_ver05.ui")
         ui_file.open(QFile.ReadOnly)
         self.ui = loadUi(ui_file)
         ui_file.close()
         # 버튼 클릭 시그널에 슬롯 함수 연결
-        self.ui.pushButton.clicked.connect(self.handle_button_click)
+        self.ui.pushButton_4.clicked.connect(self.handle_button_click)
         self.ui.pushButton_1.clicked.connect(self.handle_button_1_click)
         self.ui.pushButton_2.clicked.connect(self.handle_button_2_click)
         self.ui.pushButton_3.clicked.connect(self.handle_button_3_click)
-        self.ui.pushButton_4.clicked.connect(self.handle_button_4_click)
-        self.ui.pushButton_5.clicked.connect(self.handle_button_5_click)
+        self.ui.pushButton_5.clicked.connect(self.handle_button_4_click)
+        self.ui.pushButton_6.clicked.connect(self.handle_button_5_click)
         # 웹 드라이버 설정
         self.driver = webdriver.Chrome()
         self.tableWidget_week_2 = self.ui.findChild(QTableWidget, "tableWidget_week_2")

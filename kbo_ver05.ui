@@ -58,7 +58,7 @@ QTabBar::tab:hover {
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="home_tab">
      <attribute name="title">
@@ -533,7 +533,7 @@ padding:4px</string>
        <string notr="true"/>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tusu_rank">
        <attribute name="title">
@@ -567,7 +567,7 @@ padding:4px</string>
           <string>세이브</string>
          </property>
         </widget>
-        <widget class="QTableWidget" name="tableWidget_week_3">
+        <widget class="QTableWidget" name="tableWidget_week_2">
          <property name="geometry">
           <rect>
            <x>0</x>
@@ -615,7 +615,7 @@ padding:4px</string>
           <string>평균자책</string>
          </property>
         </widget>
-        <zorder>tableWidget_week_3</zorder>
+        <zorder>tableWidget_week_2</zorder>
         <zorder>pushButton_2</zorder>
         <zorder>pushButton_1</zorder>
         <zorder>pushButton_4</zorder>
@@ -692,7 +692,7 @@ padding:4px</string>
          </property>
         </widget>
        </widget>
-       <widget class="QTableWidget" name="tableWidget_week_2">
+       <widget class="QTableWidget" name="tableWidget_week_3">
         <property name="geometry">
          <rect>
           <x>10</x>
