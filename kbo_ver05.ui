@@ -124,7 +124,7 @@ padding:4px</string>
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
-      <widget class="QLineEdit" name="new_list_item_01">
+      <widget class="QLineEdit" name="new_list_item_1">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -249,7 +249,7 @@ font: 11pt &quot;D2Coding&quot;;</string>
       <zorder>tableWidget_5</zorder>
       <zorder>label_3</zorder>
       <zorder>label_5</zorder>
-      <zorder>new_list_item_01</zorder>
+      <zorder>new_list_item_1</zorder>
       <zorder>new_list_item_2</zorder>
       <zorder>new_list_item_3</zorder>
       <zorder>new_list_item_4</zorder>
@@ -533,7 +533,7 @@ padding:4px</string>
        <string notr="true"/>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tusu_rank">
        <attribute name="title">
