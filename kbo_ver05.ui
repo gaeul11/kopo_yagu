@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1388</width>
-    <height>883</height>
+    <width>1663</width>
+    <height>979</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -124,7 +124,7 @@ padding:4px</string>
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
-      <widget class="QLineEdit" name="new_list_item_01">
+      <widget class="QLineEdit" name="new_list_item_1">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -249,7 +249,7 @@ font: 11pt &quot;D2Coding&quot;;</string>
       <zorder>tableWidget_5</zorder>
       <zorder>label_3</zorder>
       <zorder>label_5</zorder>
-      <zorder>new_list_item_01</zorder>
+      <zorder>new_list_item_1</zorder>
       <zorder>new_list_item_2</zorder>
       <zorder>new_list_item_3</zorder>
       <zorder>new_list_item_4</zorder>
@@ -515,6 +515,134 @@ padding:4px</string>
       <zorder>horizontalLayoutWidget</zorder>
       <zorder>tableWidget</zorder>
      </widget>
+     <widget class="QWidget" name="todayGame_Widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>550</y>
+        <width>1291</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color : #FCFCFC;
+font: 75 13pt &quot;D2Coding&quot;;
+color : #ffffff;
+padding:4px</string>
+      </property>
+      <widget class="QWidget" name="horizontalLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>39</y>
+         <width>1191</width>
+         <height>251</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="spacing">
+         <number>24</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="game_1">
+          <property name="styleSheet">
+           <string notr="true">background-color : #FFFFFF;
+font: 75 11pt &quot;D2Coding&quot;;
+color : #ffffff;
+padding:4px;
+border-radius: 8px;
+border: 2px solid #F68EAB;</string>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="game_3">
+          <property name="styleSheet">
+           <string notr="true">background-color : #FFFFFF;
+font: 75 11pt &quot;D2Coding&quot;;
+color : #ffffff;
+padding:4px;
+border-radius: 8px;
+border: 2px solid #F68EAB;</string>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="game_4">
+          <property name="styleSheet">
+           <string notr="true">background-color : #FFFFFF;
+font: 75 11pt &quot;D2Coding&quot;;
+color : #ffffff;
+padding:4px;
+border-radius: 8px;
+border: 2px solid #F68EAB;</string>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="game_5">
+          <property name="styleSheet">
+           <string notr="true">background-color : #FFFFFF;
+font: 75 11pt &quot;D2Coding&quot;;
+color : #ffffff;
+padding:4px;
+border-radius: 8px;
+border: 2px solid #F68EAB;</string>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="game_2">
+          <property name="styleSheet">
+           <string notr="true">background-color : #FFFFFF;
+font: 75 11pt &quot;D2Coding&quot;;
+color : #ffffff;
+padding:4px;
+border-radius: 8px;
+border: 2px solid #F68EAB;</string>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>520</y>
+        <width>421</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color : #F68EAB;
+font: 75 13pt &quot;D2Coding&quot;;
+color : #ffffff;
+padding:4px</string>
+      </property>
+      <property name="text">
+       <string>오늘의 경기</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="rank_tab">
      <attribute name="title">
@@ -575,6 +703,9 @@ padding:4px</string>
            <width>971</width>
            <height>601</height>
           </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 11pt &quot;D2Coding&quot;;</string>
          </property>
         </widget>
         <widget class="QPushButton" name="pushButton_1">
@@ -703,13 +834,16 @@ padding:4px</string>
         </property>
         <property name="font">
          <font>
-          <pointsize>14</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
+          <family>D2Coding</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255);</string>
+         <string notr="true">background-color: rgb(255, 255, 255);
+font: 11pt &quot;D2Coding&quot;;</string>
         </property>
        </widget>
       </widget>
@@ -781,7 +915,7 @@ padding:4px</string>
 	padding-right:15px;</string>
        </property>
        <property name="text">
-        <string>순위       이름          조회수</string>
+        <string>순위              이름                     조회수</string>
        </property>
       </widget>
       <widget class="QTableWidget" name="tableWidget_week">
@@ -795,13 +929,16 @@ padding:4px</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>14</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
+         <family>D2Coding</family>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(252, 252, 252);</string>
+        <string notr="true">background-color: rgb(252, 252, 252);
+font: 12pt &quot;D2Coding&quot;;</string>
        </property>
       </widget>
      </widget>
@@ -867,7 +1004,7 @@ padding:4px</string>
 	padding-right:15px;</string>
        </property>
        <property name="text">
-        <string>순위       이름         조회수</string>
+        <string>순위              이름                     조회수</string>
        </property>
       </widget>
       <widget class="QTableWidget" name="tableWidget_2">
@@ -881,13 +1018,16 @@ padding:4px</string>
        </property>
        <property name="font">
         <font>
-         <pointsize>14</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
+         <family>D2Coding</family>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(252, 252, 252);</string>
+        <string notr="true">background-color: rgb(252, 252, 252);
+font: 12pt &quot;D2Coding&quot;;</string>
        </property>
       </widget>
      </widget>
@@ -3197,30 +3337,50 @@ padding:2px;
      <widget class="QWidget" name="widget_2" native="true">
       <property name="geometry">
        <rect>
-        <x>310</x>
-        <y>10</y>
-        <width>721</width>
+        <x>440</x>
+        <y>80</y>
+        <width>871</width>
         <height>61</height>
        </rect>
       </property>
       <widget class="QLineEdit" name="searchbar">
        <property name="geometry">
         <rect>
-         <x>420</x>
+         <x>460</x>
          <y>10</y>
-         <width>191</width>
+         <width>311</width>
          <height>41</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color : #FFFFFF;
+font: 75 11pt &quot;D2Coding&quot;;
+color : #444444;
+padding:4px;
+border-radius: 8px;
+border: 2px solid #F68EAB;
+</string>
+       </property>
+       <property name="placeholderText">
+        <string>류현진</string>
        </property>
       </widget>
       <widget class="QPushButton" name="searchButton">
        <property name="geometry">
         <rect>
-         <x>610</x>
+         <x>770</x>
          <y>10</y>
          <width>75</width>
          <height>41</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color : #9F9BBC;
+font: 75 11pt &quot;D2Coding&quot;;
+color : #ffffff;
+border-radius: 8px;
+
+</string>
        </property>
        <property name="text">
         <string>검색</string>
@@ -3230,8 +3390,8 @@ padding:2px;
      <widget class="QWidget" name="widget_3" native="true">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>10</y>
+        <x>140</x>
+        <y>80</y>
         <width>301</width>
         <height>671</height>
        </rect>
@@ -3341,9 +3501,9 @@ padding:2px;
      <widget class="QWidget" name="widget_4" native="true">
       <property name="geometry">
        <rect>
-        <x>310</x>
-        <y>70</y>
-        <width>721</width>
+        <x>440</x>
+        <y>140</y>
+        <width>871</width>
         <height>611</height>
        </rect>
       </property>
@@ -3352,7 +3512,7 @@ padding:2px;
         <rect>
          <x>10</x>
          <y>50</y>
-         <width>321</width>
+         <width>382</width>
          <height>41</height>
         </rect>
        </property>
@@ -3378,9 +3538,9 @@ padding:2px;
       <widget class="QTableWidget" name="tableWidget_3">
        <property name="geometry">
         <rect>
-         <x>370</x>
+         <x>460</x>
          <y>100</y>
-         <width>311</width>
+         <width>382</width>
          <height>501</height>
         </rect>
        </property>
@@ -3393,7 +3553,7 @@ padding:2px;
         <rect>
          <x>10</x>
          <y>10</y>
-         <width>321</width>
+         <width>382</width>
          <height>41</height>
         </rect>
        </property>
@@ -3422,7 +3582,7 @@ padding:2px;
         <rect>
          <x>10</x>
          <y>100</y>
-         <width>321</width>
+         <width>382</width>
          <height>501</height>
         </rect>
        </property>
@@ -3433,9 +3593,9 @@ padding:2px;
       <widget class="QLabel" name="playerInfo_Week_3">
        <property name="geometry">
         <rect>
-         <x>370</x>
+         <x>460</x>
          <y>10</y>
-         <width>311</width>
+         <width>382</width>
          <height>41</height>
         </rect>
        </property>
@@ -3462,9 +3622,9 @@ padding:2px;
       <widget class="QLabel" name="player_info_rank_3">
        <property name="geometry">
         <rect>
-         <x>370</x>
+         <x>460</x>
          <y>50</y>
-         <width>311</width>
+         <width>382</width>
          <height>41</height>
         </rect>
        </property>
@@ -3496,7 +3656,7 @@ padding:2px;
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1388</width>
+     <width>1663</width>
      <height>21</height>
     </rect>
    </property>

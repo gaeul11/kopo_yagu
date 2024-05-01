@@ -11,21 +11,15 @@ from PyQt5.QtCore import QUrl
 
 # UI 파일 로드
 root = os.path.dirname(os.path.abspath(__file__))
-MainUI = uic.loadUiType(os.path.join(root, 'kbo_ver04.ui'))[0]
-
+MainUI = uic.loadUiType(os.path.join(root, 'kbo_ver05.ui'))[0]
 # ChromeDriver 자동 관리
 service = Service(executable_path=ChromeDriverManager().install())
-
 # 드라이버 초기화
 driver = webdriver.Chrome(service=service)
-
 # 팀 순위 페이지 URL
 team_rank_url = 'https://statiz.sporki.com/'
-
 # 뉴스 페이지 URL
 news_url = 'https://sports.news.naver.com/kbaseball/index'
-
-
 class MainDialog(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -111,19 +105,16 @@ class MainDialog(QMainWindow):
         vertical_header = self.ui.tableWidget_2.verticalHeader()
         vertical_header.setVisible(False)  # 수직 헤더 숨기기
         self.ui.tableWidget_2.setShowGrid(False)  # 그리드 라인을 표시하지 않음
-
         # 열의 크기 조절
         self.ui.tableWidget_2.setColumnWidth(0, 300)  # 첫 번째 열의 너비를 조절
-
         # 라벨에 뉴스 제목 설정
         for i, element in enumerate(news_elements):
             if i < 8:
                 label_name = f"new_list_item_{i + 1}"
                 label = getattr(self.ui, label_name)
                 link = element.find_element(By.TAG_NAME, "a")
-                news_title = link.text[:33] + "..." if len(link.text) > 33 else link.text
+                news_title = link.text[:15] + "..." if len(link.text) > 15 else link.text
                 label.setText(f"{i + 1}. {news_title}")
-
                 # 라벨에 클릭 이벤트 연결
                 label.mousePressEvent = lambda event, link=link: self.on_news_label_clicked(link)
 
@@ -134,7 +125,6 @@ class MainDialog(QMainWindow):
         news_url = news_link.get_attribute("href")
         # 웹 브라우저에서 뉴스 열기
         QDesktopServices.openUrl(QUrl(news_url))
-
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

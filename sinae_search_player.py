@@ -14,7 +14,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 # UI 파일 로드
 root = os.path.dirname(os.path.abspath(__file__))
-MainUI = uic.loadUiType(os.path.join(root, 'kbo_sinae.ui'))[0]
+MainUI = uic.loadUiType(os.path.join(root, 'kbo_ver05.ui'))[0]
 
 # ChromeDriver 자동 관리
 service = Service(executable_path=ChromeDriverManager().install())
